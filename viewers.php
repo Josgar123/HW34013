@@ -4,5 +4,6 @@ require_once("model-viewers.php");
 $pageTitle = "Viewers";
 include "view-header.php";
 $movies = selectViewers();
-include "view-movies.php";
+include "view-viewers.php";
 include "view-footer.php";
+?>
