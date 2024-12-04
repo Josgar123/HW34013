@@ -20,7 +20,7 @@ while ($viewer = $viewers->fetch_assoc()) {
     <td>
       <form method="post" action"months-by-viewer.php">
         <input type="hidden" name="cid" value="<?php echo $viewer['viewer_id'];?>"
-  <button type="submit" class="btn btn-primary">Months</button>
+  <button type="submit" class="btn btn-primary"></button>
 </form>
     </td>
   </tr>
