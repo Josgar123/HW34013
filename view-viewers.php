@@ -6,7 +6,7 @@
     <th>ID</th> 
     <th>Name</th>
     <th>Description</th> 
-      <th> </th>
+    
     </tr>
   </thead> 
     <tbody>
