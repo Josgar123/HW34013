@@ -13,7 +13,6 @@ function selectMovies() {
     }
 }
 
-<?php
 function selectViewersByMovie() {
     try {
         $conn = get_db_connection();
@@ -28,5 +27,4 @@ function selectViewersByMovie() {
         throw $e;
     }
 }
-?>
 ?>
