@@ -27,7 +27,7 @@
           <a class="nav-link" href="movies.php">Movies</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="preferred-customer-movie.php">Preferred Customer Movie</a>
+          <a class="nav-link" href="preferred-customer-movie.php">Preferred Viewer Movie</a>
         </li>
       </ul>
     </div>
