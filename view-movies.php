@@ -6,7 +6,7 @@
       
     <th>ID </th> 
     <th>Name</th>
-    <th>Theater</th> 
+    <th>Runtime</th> 
       <th> </th>
     </tr>
   </thead> 
@@ -17,7 +17,7 @@ while ($movie = $movies->fetch_assoc()) {
   <tr>
     <td> <?php echo $movie['movie_id'];?> </td>
     <td> <?php echo $movie['movie_name'];?> </td>
-    <td> <?php echo $movie['movie_theater'];?> </td>
+    <td> <?php echo $movie['runtime'];?> </td>
     <td> <a href="viewers-by-movie.php?id=<?php echo $movie['movie_id'];?>">Viewers</a> </td>
   </tr>
   <?php
