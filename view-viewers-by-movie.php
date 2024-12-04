@@ -20,9 +20,7 @@ while ($viewer = $viewers->fetch_assoc()) {
     <td> <?php echo $movie['viewer_id'];?> </td>
     <td> <?php echo $movie['viewer_name'];?> </td>
     <td> <?php echo $movie['viewer_description'];?> </td>
-     <td> <?php echo $movie['month'];?> </td>
-     <td> <?php echo $movie['year'];?> </td>
-     <td> <?php echo $movie['day_time'];?> </td>
+   
   </tr>
   <?php
 }
