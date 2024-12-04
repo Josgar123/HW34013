@@ -13,14 +13,14 @@ while ($movie = $movies->fetch_assoc()) {
   $viewers = selectViewersByMovies($movie['movie_id']);
   while ($viewer = $courses->fetch_assoc()) {
     ?>
-    <li class="list-group-item"><?php echo $movie['viewer_name'];?> - <?php echo $movie['month'];?> - <?php echo $movie['year'];?> - <?php echo $movie['day_time'];?></li>
+    <li class="list-group-item"><?php echo $movie['viewer_name'];?> - <?php echo $movie['viewer_id'];?> - <?php echo $movie['viewer_description'];?></li>
       
     <?php
     }
     ?>
       </ul>
       </p>
-      <p class="card-text"><small class="text-body-secondary">Theater: <?php echo $movie['movie_theater'];?> </small></p>
+      <p class="card-text"><small class="text-body-secondary">Movie Name: <?php echo $movie['movie_name'];?> </small></p>
     </div>
   </div>
  
