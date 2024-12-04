@@ -6,9 +6,7 @@
     <th>ID </th> 
     <th>Name</th>
     <th>Description</th> 
-    <th>Month</th> 
-    <th>Year</th> 
-    <th>Day/ Time</th>   
+     
     </tr>
     
   </thead> 
