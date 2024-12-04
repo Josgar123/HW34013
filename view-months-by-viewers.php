@@ -20,9 +20,6 @@ while ($month = $months->fetch_assoc()) {
     <td> <?php echo $month['viewer_id'];?> </td>
     <td> <?php echo $month['viewer_name'];?> </td>
     <td> <?php echo $month['viewer_description'];?> </td>
-     <td> <?php echo $month['month'];?> </td>
-     <td> <?php echo $month['year'];?> </td>
-     <td> <?php echo $month['day_time'];?> </td>
   </tr>
   <?php
 }
