@@ -1,6 +1,6 @@
 <?php
 require_once("db-util.php");
-require_once("model-preferred-customer-movie.php");
+require_once("model-prefered-customer-movie.php");
 $pageTitle = "Preferred-Customer-Movie";
 include "view-header.php";
 $movies = selectMovies();
