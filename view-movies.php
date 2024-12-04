@@ -7,7 +7,7 @@
     <th>ID </th> 
     <th>Name</th>
     <th>Runtime</th> 
-      <th> </th>
+    
     </tr>
   </thead> 
   <tbody>
