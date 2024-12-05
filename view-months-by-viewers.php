@@ -14,7 +14,7 @@
   </thead> 
     <tbody>
       <?php
-while ($month = $months->fetch_assoc()) {
+while ($month = $movies->fetch_assoc()) {
   ?>
   <tr>
     <td> <?php echo $month['viewer_id'];?> </td>
