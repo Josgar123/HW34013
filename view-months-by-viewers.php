@@ -1,4 +1,4 @@
-<h1>Months by Viewer</h1>
+<h1>Movie Viewer</h1>
 <div class="table-responsive">
   <table class="table">
   <thead>
