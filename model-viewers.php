@@ -30,7 +30,7 @@ function updateViewer($vName, $vDesc, $vid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update viewer set viewer_name=?, viewer_description=? where viewer_id=?");
-        $stmt->bind_param("ssi", $vName, $vDesc);
+        $stmt->bind_param("ssi", $vName, $vDesc, $vid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
