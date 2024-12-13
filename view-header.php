@@ -30,7 +30,7 @@
           <a class="nav-link" href="preferred-customer-movie.php">Preferred Viewer Movie</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="preferred-customer-movie.php">Directors</a>
+          <a class="nav-link" href="directors.php">Directors</a>
         </li>
       </ul>
     </div>
