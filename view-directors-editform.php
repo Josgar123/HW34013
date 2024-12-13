@@ -30,7 +30,7 @@
               <input type="text" class="form-control" id="dMovies<?php echo $director['director_id']; ?>" name="dMovies" value=<?php echo $director['movies_made']; ?>>
             </div>
            
-            <input type="hidden" name="mid" value=<?php echo $movie['movie_id']; ?>>
+            <input type="hidden" name="did" value=<?php echo $director['director_id']; ?>>
             <input type="hidden" name="actionType" value="Edit">
             <button type="submit" class="btn btn-primary">Save</button>
        </form>
