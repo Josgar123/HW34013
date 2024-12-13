@@ -48,7 +48,7 @@ function deleteMovie($mid) {
         $success = $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
-        return $sucess;
+        return $success;
     } catch (Exception $e) {
         $conn->close();
         throw $e;
