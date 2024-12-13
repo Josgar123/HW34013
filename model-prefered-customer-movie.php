@@ -13,4 +13,46 @@ function selectMovies() {
         throw $e;
     }
 }
+function insertMovie($mid, $vid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("insert into movieviewer (movie_id, viewer_id) values (?,?)");
+        $stmt->bind_param("ii", $mid, $vid);
+        $success = $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+function updateMovie() {
+    try {
+        $conn = get_db_connection($mid, $vid, $mmid);
+        $stmt = $conn->prepare("update movieviewer set movie_id=?, viewer_id=? where movieviewer_id=?");
+        $stmt->bind_param("iii", $mid, $vid);
+        $success = $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+function deleteMovie($mmid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("delete from movieviewer where movieviewer_id=?");
+        $stmt->bind_param("i", $mmid);
+        $success = $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 ?>
