@@ -26,6 +26,7 @@
               <label for="vDesc" class="form-label">Viewer Description</label>
               <input type="text" class="form-control" id="vDesc" name="vDesc">
             </div>
+            <input type="hidden" name="actionType" value="Add">
             <button type="submit" class="btn btn-primary">Save</button>
        </form>
         
