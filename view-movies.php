@@ -38,7 +38,7 @@ while ($movie = $movies->fetch_assoc()) {
     </td>
  <td> 
        <form method="post" action="">
-    <input type="hidden" name="vid" value="<?php echo $movie['movie_id'];?>">
+    <input type="hidden" name="mid" value="<?php echo $movie['movie_id'];?>">
     <input type="hidden" name="actionType" value="Delete">
          
       <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure?');">
