@@ -42,7 +42,7 @@ function deleteMovie($mid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("delete from movie where movie_id=?");
-          $stmt->bind_param("i", $mid);
+        $stmt->bind_param("i",$mid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
