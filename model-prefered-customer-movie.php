@@ -31,7 +31,7 @@ function updateMovieViewer() {
     try {
         $conn = get_db_connection($mid, $vid, $mmid);
         $stmt = $conn->prepare("update movieviewer set movie_id=?, viewer_id=? where movieviewer_id=?");
-        $stmt->bind_param("iii", $mid, $vid);
+        $stmt->bind_param("iii", $mid, $vid, $mmid);
         $success = $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
