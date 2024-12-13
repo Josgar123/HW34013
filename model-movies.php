@@ -18,7 +18,6 @@ function insertMovie($mName, $mRuntime, $mYear, $mGenre) {
         $stmt = $conn->prepare("insert into movie (movie_name, runtime, year, genre) values (?,?,?,?)");
         $stmt->bind_param("ssis", $mName, $mRuntime, $mYear, $mGenre);
         $success = $stmt->execute();
-        $result = $stmt->get_result();
         $conn->close();
         return $success;
     } catch (Exception $e) {
@@ -32,7 +31,6 @@ function updateMovie($mName, $mRuntime, $mYear, $mGenre, $mid) {
         $stmt = $conn->prepare("update movie set movie_name=?, runtime=?, year=?, genre=? where movie_id=?");
         $stmt->bind_param("ssisi", $mName, $mRuntime, $mYear, $mGenre, $mid);
         $success = $stmt->execute();
-        $result = $stmt->get_result();
         $conn->close();
         return $success;
     } catch (Exception $e) {
@@ -46,7 +44,6 @@ function deleteMovie($mid) {
         $stmt = $conn->prepare("delete from movie where movie_id=?");
           $stmt->bind_param("i", $mid);
         $success = $stmt->execute();
-        $result = $stmt->get_result();
         $conn->close();
         return $success;
     } catch (Exception $e) {
