@@ -32,7 +32,7 @@ while ($viewer = $viewers->fetch_assoc()) {
     <td> 
        <form method="post" action="">
     <input type="hidden" name="cid" value="<?php echo $viewer['viewer_id'];?>">
-    <input type="hidden" name=actionType" value="Delete">
+    <input type="hidden" name="actionType" value="Delete">
          
       <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure?');">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
