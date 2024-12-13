@@ -31,7 +31,7 @@ while ($viewer = $viewers->fetch_assoc()) {
     <td> </td>
     <td> 
        <form method="post" action="">
-    <input type="hidden" name="cid" value="<?php echo $viewer['viewer_id'];?>">
+    <input type="hidden" name="vid" value="<?php echo $viewer['viewer_id'];?>">
     <input type="hidden" name="actionType" value="Delete">
          
       <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure?');">
