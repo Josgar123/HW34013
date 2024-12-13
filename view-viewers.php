@@ -28,7 +28,11 @@ while ($viewer = $viewers->fetch_assoc()) {
     <td> <?php echo $viewer['viewer_id'];?> </td>
     <td> <?php echo $viewer['viewer_name'];?> </td>
     <td> <?php echo $viewer['viewer_description'];?> </td>
-    <td> </td>
+    <td> 
+      <?php
+    include "view-viewers-editform.php";
+      ?>
+    </td>
     <td> 
        <form method="post" action="">
     <input type="hidden" name="vid" value="<?php echo $viewer['viewer_id'];?>">
