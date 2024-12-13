@@ -2,7 +2,8 @@
 function selectMonthsByViewer($cid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT v.viewer_id, viewer_name, viewer_description FROM viewer v join movieviewer m on m.viewer_id = v.viewer_id where m.viewer_id=?");
+        $stmt = $conn->prepare("SELECT m.movie_id, movie_name, runtime, v.viewer_id, viewer_name, viewer_description FROM movie m 
+        join movieviewer mv on mv.movie_id=m.movie_id join viewer v on v.viewer_id=mv.viewer_id");
         $stmt->bind_param("i",$cid); // look again to see if it matches
         $stmt->execute();
         $result = $stmt->get_result();
