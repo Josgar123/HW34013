@@ -13,6 +13,13 @@ if(isset($_POST['actionType'])) {
     echo '<div class="alert alert-danger" role="alert">Error!</div>';
     }
     break;
+     case "Edit":
+    if(updateViewer($_POST['vName'], $_POST['vDesc'], $_POST['vid'])){
+    echo'<div class="alert alert-success" role="alert">Viewer Edited!</div>';
+      } else {
+    echo '<div class="alert alert-danger" role="alert">Error!</div>';
+    }
+    break;
      case "Delete":
     if(deleteViewer($_POST['vid'])){
     echo'<div class="alert alert-success" role="alert">Viewer Deleted!</div>';
