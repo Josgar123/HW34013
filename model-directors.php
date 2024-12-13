@@ -29,8 +29,8 @@ function insertDirector($dName, $dAge, $dMovies) {
 function updateDirector($dName, $dAge, $dMovies, $did) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update director set director_name=?, director_age=?, movies_made=? where movie_id=?");
-        $stmt->bind_param("sisi", $dName, $dAge, $dMovies);
+        $stmt = $conn->prepare("update director set director_name=?, director_age=?, movies_made=? where director_id=?");
+        $stmt->bind_param("sisi", $dName, $dAge, $dMovies, $did);
         $success = $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
