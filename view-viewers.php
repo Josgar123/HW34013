@@ -1,4 +1,13 @@
-<h1>Viewers</h1>
+<div class="row">
+  <div class="col">
+    <h1>Viewers</h1>
+  </div>
+  <div class="col-auto">
+    <?php 
+include "view-courses-newform.php";
+    ?>
+  </div>
+</div>
 <div class="table-responsive">
   <table class="table">
   <thead>
