@@ -1,6 +1,6 @@
 <div class="row">
   <div class="cal">
-    <h1>Directorss</h1>
+    <h1>Directors</h1>
   </div>
   <div class="col-auto">
    <?php
