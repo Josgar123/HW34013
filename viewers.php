@@ -14,7 +14,7 @@ if(isset($_POST['actionType'])) {
     }
     break;
      case "Delete":
-    if(deleteViewer($_POST['vName'])){
+    if(deleteViewer($_POST['vid'])){
     echo'<div class="alert alert-success" role="alert">Viewer Deleted!</div>';
       } else {
     echo '<div class="alert alert-danger" role="alert">Error!</div>';
