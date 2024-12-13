@@ -26,7 +26,7 @@ function insertViewer($vName, $vDesc) {
     }
 }
 
-}function updateViewer($vName, $vDesc, $vid) {
+function updateViewer($vName, $vDesc, $vid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update viewer set viewer_name=?, viewer_description=? where viewer_id=?");
@@ -51,4 +51,5 @@ function deleteViewer($vid) {
         $conn->close();
         throw $e;
     }
+}
 ?>
