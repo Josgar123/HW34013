@@ -6,9 +6,8 @@ function selectMonthsByViewer($cid) {
         join movieviewer mv on mv.movie_id=m.movie_id join viewer v on v.viewer_id=mv.viewer_id where m.movie_id=?");
         $stmt->bind_param("i",$cid); // look again to see if it matches
         $success=$stmt->execute();
-        $result = $stmt->get_result();
         $conn->close();
-        return $result;
+        return $success;
     } catch (Exception $e) {
         $conn->close();
         throw $e;
