@@ -2,8 +2,8 @@
 $pageTitle = "Home";
 include "view-header.php";
 ?>
-
-    <h1>Movies</h1>
+<div style="background-color: beige; padding: 20px;">
+    <h1 style="text-align: center;">Movies</h1>
    <?php
 include "view-footer.php";
     ?>
