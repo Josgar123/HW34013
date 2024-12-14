@@ -42,7 +42,7 @@ while ($month = $movies->fetch_assoc()) {
     </td>
   <td> 
        <form method="post" action="">
-    <input type="hidden" name="mmid" value="<?php echo $movieviewer['movieviewer_id'];?>">
+    <input type="hidden" name="cid" value="<?php echo $movieviewer['movieviewer_id'];?>">
     <input type="hidden" name="actionType" value="Delete">
          
       <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure?');">
