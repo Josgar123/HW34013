@@ -20,10 +20,7 @@
         <form method="post" action="">
             <div class="mb-3">
               <label for="mid" class="form-label"> Movie ID</label>
-            <?php
-                $movielist = selectMovieForInput();
-                include "view-movie-input-list.php";
-            ?>
+          <input type="text" class="form-control" id="mid" name="mid">
             </div>
             <div class="mb-3">
               <label for="vid" class="form-label">Viewer ID</label>
