@@ -23,7 +23,7 @@
             <?php
                 $movielist = selectMovieForInput();
                 include "view-movie-input-list.php";
-            <?
+            ?>
             </div>
             <div class="mb-3">
               <label for="vid" class="form-label">Viewer ID</label>
