@@ -6,8 +6,21 @@
     <title><?=$pageTitle?> </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
    <style>
-      h1, h2, h3, h4, h5, h6 {
-        text-align: center;
+   <style>
+  body {
+    background-image: url('https://wallpapers.com/images/featured/movie-9pvmdtvz4cb0xl37.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; 
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  }
+</style>
+
    </style>
   </head>
   <body style="background-color: beige;">
