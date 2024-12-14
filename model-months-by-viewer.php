@@ -1,5 +1,5 @@
 <?php
-function selectMonthsByViewer($mmid) {
+function selectMonthsByViewer($cid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT m.movie_id, movie_name, runtime, v.viewer_id, viewer_name, viewer_description FROM movie m 
