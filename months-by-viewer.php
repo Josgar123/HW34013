@@ -30,6 +30,6 @@ if(isset($_POST['actionType'])) {
   }
 }
 
-$movies = selectMonthsByViewer($_POST['cid']);
+$movies = selectMonthsByViewer($_POST['mmid']);
 include "view-months-by-viewers.php";
 include "view-footer.php";
