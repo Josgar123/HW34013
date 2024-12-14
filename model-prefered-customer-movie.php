@@ -27,6 +27,32 @@ function insertMovieViewer($mid, $vid) {
         throw $e;
     }
 }
+function selectMovieForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT movie_id, movie_name, runtime, year, genre FROM movie order by movie_name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+function selectViewerForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT viewer_id, viewer_name, viewer_description FROM viewer order by viewer_name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 function updateMovieViewer() {
     try {
         $conn = get_db_connection($mid, $vid, $mmid);
