@@ -8,7 +8,7 @@ function selectMonthsByViewer($cid) {
         $success=$stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
-        return $success;
+        return $result;
     } catch (Exception $e) {
         $conn->close();
         throw $e;
