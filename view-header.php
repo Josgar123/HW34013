@@ -10,8 +10,7 @@
         text-align: center;
    </style>
   </head>
-<div style="background-image: url('https://wallpapers.com/images/featured/movie-9pvmdtvz4cb0xl37.jpg'); background-size: cover; background-position: center; padding: 300px; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">
-</div> 
+  <body style="background-color: beige;">
   <div class="container">
 
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
